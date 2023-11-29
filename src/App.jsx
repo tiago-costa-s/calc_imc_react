@@ -10,7 +10,9 @@ function App() {
       <ControlInput
         position="column"
         label="Altura"
-        variant="ab"
+        variant="outline"
+        name="height"
+        placeholder="Exemplo: 1,70"
       />
     </div>
 
