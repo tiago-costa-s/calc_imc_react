@@ -1,11 +1,11 @@
-import React from 'react'
+import './TableImc.css';
 
 const TableImc = () => {
 
     return (
 
-        <div className="table-imc">
-            <h1>Table imc</h1>
+        <div className='table-imc'>
+            <h3>Table imc</h3>
         </div>
 
     )

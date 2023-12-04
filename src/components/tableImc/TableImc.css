@@ -1,0 +1,7 @@
+.table-imc {
+    width: 400px;
+    padding: 2rem;
+    border: 0;
+    border-radius: 25px;
+    background-color: var(--darkviolet);
+}
