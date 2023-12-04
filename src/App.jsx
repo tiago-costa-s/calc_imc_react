@@ -1,5 +1,9 @@
-import './App.css';
+// Componetes
+import TableImc from './components/tableImc/TableImc';
 import CalculatorImc from './components/calculatorImc/CalculatorImc';
+
+// CSS
+import './App.css';
 
 function App() {
 
@@ -7,6 +11,7 @@ function App() {
 
     <div className="app">
       <CalculatorImc />
+      <TableImc />
     </div>
 
   )

@@ -4,7 +4,9 @@ const TableImc = () => {
 
     return (
 
-        <div className="table-imc"></div>
+        <div className="table-imc">
+            <h1>Table imc</h1>
+        </div>
 
     )
 
