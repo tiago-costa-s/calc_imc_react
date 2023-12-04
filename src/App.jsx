@@ -1,7 +1,7 @@
-import ControlInput from './components/controlInput/ControlInput'
+import ControlInput from './components/controlInput/ControlInput';
 
-import './App.css'
-import CalculatorImc from './components/calculatorImc/CalculatorImc'
+import './App.css';
+import CalculatorImc from './components/calculatorImc/CalculatorImc';
 
 function App() {
 
