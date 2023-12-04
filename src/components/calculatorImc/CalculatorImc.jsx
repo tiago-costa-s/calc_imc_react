@@ -27,7 +27,10 @@ const CalculatorImc = () => {
                 />
             </form>
             <div className='control-button'>
-                <FormButton text='Calcular' />
+                <FormButton
+                    variant="border-line"
+                    text='Calcular'
+                />
             </div>
         </div>
 

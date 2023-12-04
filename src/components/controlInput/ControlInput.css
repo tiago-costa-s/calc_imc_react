@@ -28,5 +28,6 @@ input {
     padding: .7rem;
     border: 0;
     border-bottom: 1px solid #adadad;
+    background-color: var(--darkviolet);
     outline: none;
 }

@@ -2,4 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #EBEBEB;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --white: #EBEBEB;
+    --gray: #6B6B6B;
+    --blueviolet: #7F45E2;
+    --blackviolet: #462878;
+    --darkviolet: #2D2A37;
 }
