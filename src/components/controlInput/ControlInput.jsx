@@ -18,6 +18,7 @@ const ControlInput = ({ position, label, variant, name, placeholder }) => {
     };
 
     return (
+
         <div className={`control-input ${position}`}>
             <label htmlFor={name}>{label}</label>
             <input
@@ -29,6 +30,7 @@ const ControlInput = ({ position, label, variant, name, placeholder }) => {
                 onChange={onChange}
             />
         </div>
+        
     )
 
 }

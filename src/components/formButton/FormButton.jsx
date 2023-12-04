@@ -3,7 +3,13 @@ import "./FormButton.css";
 const FormButton = ({ variant, action, text }) => {
 
     return (
-        <button className={variant} onClick={action}>{text}</button>
+
+        <button
+            className={variant}
+            onClick={action}>
+            {text}
+        </button>
+
     );
 
 };
