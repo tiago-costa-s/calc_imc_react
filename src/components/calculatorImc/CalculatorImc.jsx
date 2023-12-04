@@ -10,6 +10,7 @@ const CalculatorImc = () => {
     return (
 
         <div className='calculator-imc'>
+            <h2>Calcule o seu IMC</h2>
             <form className=''>
                 <ControlInput
                     position='column'
