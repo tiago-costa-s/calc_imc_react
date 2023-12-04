@@ -1,0 +1,26 @@
+.control-input {
+    display: flex;
+    gap: .7rem;
+    width: 100%;
+}
+
+.control-input input::placeholder {
+   opacity: .5;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* variantes */
+.outline {
+    font-size: 1.3rem;
+    padding: .7rem;
+    border: 0;
+    border-bottom: 1px solid #adadad;
+    outline: none;
+}
