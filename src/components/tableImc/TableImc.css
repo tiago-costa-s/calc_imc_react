@@ -1,5 +1,6 @@
 .table-imc {
-    width: 400px;
+    width: 350px;
+    min-height: 450px;
     padding: 2rem;
     border: 0;
     border-radius: 25px;
