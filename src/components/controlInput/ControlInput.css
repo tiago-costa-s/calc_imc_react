@@ -19,6 +19,13 @@ label {
     opacity: .5;
 }
 
+.container-input {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #adadad;
+}
+
+
 .row {
     flex-direction: row;
 }
@@ -32,7 +39,6 @@ label {
     font-size: 1.3rem;
     padding: .7rem;
     border: 0;
-    border-bottom: 1px solid #adadad;
     background-color: var(--darkviolet);
     outline: none;
 }
