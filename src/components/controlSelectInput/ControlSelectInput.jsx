@@ -1,12 +1,16 @@
-import './ControlSelectInput.css'
+import './ControlSelectInput.css';
 
-const ControlSelectInput = ({ name, id }) => {
+const ControlSelectInput = ({ position, label, variant, name, id, option }) => {
 
     return (
 
         <div className='container-select'>
-            <select name="" id="">
+            <label htmlFor="">{label}</label>
 
+            <select className={variant} name={name}>
+                <option value=''>- -</option>
+                <option value='man'>Masculino</option>
+                <option value='woman'>Feminino</option>
             </select>
         </div>
 
@@ -14,4 +18,4 @@ const ControlSelectInput = ({ name, id }) => {
 
 }
 
-export default ControlSelectInput
+export default ControlSelectInput;
