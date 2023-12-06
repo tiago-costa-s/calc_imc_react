@@ -11,7 +11,7 @@ label {
     display: flex;
     gap: .7rem;
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .control-input input::placeholder {
