@@ -4,9 +4,14 @@
     padding: 2rem;
     border: 0;
     border-radius: 25px;
-    background-color: var(--darkviolet);    
+    background-color: var(--darkviolet);
 }
 
 .control-button {
     margin-top: 2rem;
+}
+
+.icons {
+    font-size: 12px;
+    fill: var(--gray);
 }

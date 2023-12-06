@@ -1,6 +1,6 @@
 // React Icons
 import { FaWeightHanging } from "react-icons/fa";
-import { GiBodyHeight } from "react-icons/gi";
+import { FaTextHeight } from "react-icons/fa6";
 
 // Componentes
 import FormButton from '../formButton/FormButton';
@@ -21,7 +21,7 @@ const CalculatorImc = () => {
                     variant='outline'
                     name='height'
                     placeholder='Exemplo: 1,70'
-                    icon={<GiBodyHeight />}
+                    icon={<FaTextHeight className="icons" />}
                 />
                 <ControlInput
                     position='column'
@@ -29,7 +29,7 @@ const CalculatorImc = () => {
                     variant='outline'
                     name='weight'
                     placeholder="Exemplo: 80,0"
-                    icon={<FaWeightHanging />}
+                    icon={<FaWeightHanging className="icons" />}
                 />
             </form>
             <div className='control-button'>
