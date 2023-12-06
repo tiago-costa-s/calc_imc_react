@@ -19,6 +19,7 @@ const CalculatorImc = () => {
                     position='column'
                     label='Altura'
                     variant='outline'
+                    type="text"
                     name='height'
                     placeholder='Exemplo: 1,70'
                     icon={<FaTextHeight className="icons" />}
@@ -27,6 +28,7 @@ const CalculatorImc = () => {
                     position='column'
                     label='Peso'
                     variant='outline'
+                    type="text"
                     name='weight'
                     placeholder="Exemplo: 80,0"
                     icon={<FaWeightHanging className="icons" />}

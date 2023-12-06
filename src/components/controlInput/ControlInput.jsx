@@ -6,7 +6,7 @@ import { useState } from "react";
 // CSS
 import "./ControlInput.css";
 
-const ControlInput = ({ position, label, variant, name, placeholder, icon }) => {
+const ControlInput = ({ position, label, variant, type, name, placeholder, icon }) => {
 
     const [value, setValue] = useState("");
 
@@ -26,7 +26,7 @@ const ControlInput = ({ position, label, variant, name, placeholder, icon }) => 
             <div className="container-input">
                 <input
                     className={variant}
-                    type="text"
+                    type={type}
                     name={name}
                     placeholder={placeholder}
                     value={value}
