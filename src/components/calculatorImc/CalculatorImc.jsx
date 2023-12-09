@@ -6,8 +6,33 @@ import ControlSelectInput from '../controlSelectInput/ControlSelectInput';
 import FormButton from '../formButton/FormButton';
 // CSS
 import './CalculatorImc.css';
+import { useState } from 'react';
 
-const CalculatorImc = ({ }) => {
+const CalculatorImc = ({ e }) => {
+    const [height, setHeight] = useState("");
+    const [weight, setWeight] = useState("");
+    const [select, setSelect] = useState("");
+
+    const validateDigits = (text) => {
+        return text.replace(/[^0-9,]/g, "");
+    }
+
+    const heightOnChange = (e) => {
+        const heightUpdateValue = validateDigits(e.target.value);
+        setHeight(heightUpdateValue);
+        console.log(heightUpdateValue);
+    };
+
+    const weightOnChange = (e) => {
+        const weightUpdateValue = validateDigits(e.target.value);
+        setWeight(weightUpdateValue);
+        console.log(weightUpdateValue)
+    };
+
+    const selectOnChange = (e) => {
+        const selectUpdateValue = e.target.value;
+        setSelect(selectUpdateValue);
+    };
 
     return (
 
@@ -21,6 +46,8 @@ const CalculatorImc = ({ }) => {
                             type='text'
                             name='height'
                             placeholder='Exemplo: 1,70'
+                            value={height}
+                            onChange={heightOnChange}
                         />
                         <FaTextHeight />
                     </div>
@@ -33,6 +60,8 @@ const CalculatorImc = ({ }) => {
                             type='text'
                             name='weight'
                             placeholder='Exemplo: 80,0'
+                            value={weight}
+                            onChange={weightOnChange}
                         />
                         <FaWeightHanging />
                     </div>
@@ -40,7 +69,7 @@ const CalculatorImc = ({ }) => {
 
                 <div className='control-input' >
                     <label htmlFor=''>Sexo</label>
-                    <select className='container-input' name=''>
+                    <select className='container-input' name='' onChange={selectOnChange}>
                         <option value=''>- -</option>
                         <option value='man'>Masculino</option>
                         <option value='woman'>Feminino</option>
