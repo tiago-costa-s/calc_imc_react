@@ -8,10 +8,10 @@ import FormButton from '../formButton/FormButton';
 import './CalculatorImc.css';
 import { useState } from 'react';
 
-const CalculatorImc = ({ e }) => {
+const CalculatorImc = ({ e, action, calcImc }) => {
     const [height, setHeight] = useState("");
     const [weight, setWeight] = useState("");
-    const [select, setSelect] = useState("");
+    const [gender, setGender] = useState("");
 
     const validateDigits = (text) => {
         return text.replace(/[^0-9,]/g, "");
@@ -29,9 +29,9 @@ const CalculatorImc = ({ e }) => {
         console.log(weightUpdateValue)
     };
 
-    const selectOnChange = (e) => {
-        const selectUpdateValue = e.target.value;
-        setSelect(selectUpdateValue);
+    const genderOnChange = (e) => {
+        const genderUpdateValue = e.target.value;
+        setGender(genderUpdateValue);
     };
 
     return (
@@ -69,7 +69,7 @@ const CalculatorImc = ({ e }) => {
 
                 <div className='control-input' >
                     <label htmlFor=''>Sexo</label>
-                    <select className='container-input' name='' onChange={selectOnChange}>
+                    <select className='container-input' name='' onChange={genderOnChange}>
                         <option value=''>- -</option>
                         <option value='man'>Masculino</option>
                         <option value='woman'>Feminino</option>
@@ -80,6 +80,7 @@ const CalculatorImc = ({ e }) => {
                 <FormButton
                     variant='border-line'
                     text='Calcular'
+                    action={(e) => calcImc(e, height, weight, gender)}
                 />
             </div>
         </div>
