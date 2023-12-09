@@ -7,9 +7,47 @@
     background-color: var(--darkviolet);
 }
 
-.control-button {
-    margin-top: 2rem;
+.control-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.7rem;
+    /* background-color: red; */
 }
+
+.control-input label {
+    margin-bottom: .3rem;
+}
+
+.container-input {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+.container-input input, select {
+    width: 100%;
+    padding: 1rem .7rem;
+    background-color: var(--darkviolet);
+    border: 0;
+    outline: 0;
+}
+
+input {
+    font-size: 1.6rem;
+}
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+select {
+    font-size: 1.1rem;
+}
+
+label {
+    font-size: .8rem;
+}
+
 
 .icons {
     font-size: 12px;

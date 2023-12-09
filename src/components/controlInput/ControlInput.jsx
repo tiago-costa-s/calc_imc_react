@@ -34,7 +34,6 @@ const ControlInput = ({ position, label, variant, type, name, placeholder, icon 
                 />
                 {icon}
             </div>
-
         </div>
 
     )
