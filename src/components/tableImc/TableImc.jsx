@@ -4,19 +4,38 @@ import { IoWoman } from "react-icons/io5";
 // CSS
 import './TableImc.css';
 
-const TableImc = ({ data, imc, info, description }) => {
+const TableImc = ({ data, imc, info }) => {
 
     return (
 
         <div className='table-imc'>
-            <h2>Resultado</h2>
-            <p>imc: {imc}</p>
-            <p>Info: <span>{info}</span></p>
-            <p>Description: <span>{description}</span></p>
-
-            <div>
-                <IoWoman />
+            <div className="result-header">
+                <p>Seu IMC
+                    <span id="imc">{imc}</span>
+                </p>
+                <p>Sua Classificação
+                    <span id="info">{info}</span>
+                </p>
             </div>
+
+            <div className="table-header">
+                <p>Classificações</p>
+                <p>Informação</p>
+            </div>
+
+            {data.map((table) => (
+                <div className="table-body">
+                    <p className="column-description">
+                        {table.description}
+                    </p>
+                    <p className="column-info">
+                        {table.info}
+                    </p>
+                </div>
+
+
+            ))}
+
 
         </div>
 
