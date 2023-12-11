@@ -17,7 +17,7 @@ function App() {
 
     if (!height || !weight || !gender) return;
 
-      const heightValue = +height.replace(",", ".");
+    const heightValue = +height.replace(",", ".");
     const weightValue = +weight.replace(",", ".");
     const genderValue = gender;
 
@@ -47,7 +47,10 @@ function App() {
       <CalculatorImc calcImc={calcImc} />
       {/* <TableImc /> */}
 
-      <TableImc data={data} imc={imc} info={info} description={description} />
+      {imc ?
+        <TableImc data={data} imc={imc} info={info} description={description} />
+        :
+        null}
     </div>
 
   )
