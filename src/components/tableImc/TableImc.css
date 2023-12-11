@@ -24,7 +24,7 @@
 
 .result-header span {
     font-weight: 600;
-    font-weight: 500;  
+    font-weight: 500;
 
 }
 
@@ -37,15 +37,15 @@
 }
 
 .table-header,
-.table-body {
+.table-column {
     display: flex;
 }
 
 .table-header p,
-.table-body p {
+.table-column p {
     flex: 1;
     text-align: center;
-    padding: 1rem 0rem;
+    padding: .7rem 0rem;
     border-bottom: 1px solid var(--gray);
 }
 
@@ -54,29 +54,27 @@
     font-weight: 400;
 }
 
-.table-body p {
+.table-column p {
     font-size: .8rem;
     font-weight: 100;
 }
 
-
-
 .good {
-    color: red;
-}
-
-.average {
-    color: red;
+    color: #66df7e;
 }
 
 .medium {
-    color: red;
+    color: #c59d23;
 }
 
-.height {
-    color: red;
+.medium-heavy {
+    color: #c56c23;
 }
 
-.very-height {
-    color: red;
+.heavy {
+    color: #c54123;
+}
+
+.very-heavy {
+    color: #b01919;
 }

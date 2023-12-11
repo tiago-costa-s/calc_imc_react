@@ -8,9 +8,9 @@ import './CalculatorImc.css';
 import { useState } from 'react';
 
 const CalculatorImc = ({ e, action, calcImc }) => {
-    const [height, setHeight] = useState("");
-    const [weight, setWeight] = useState("");
-    const [gender, setGender] = useState("");
+    const [height, setHeight] = useState('');
+    const [weight, setWeight] = useState('');
+    const [gender, setGender] = useState('');
 
     const validateDigits = (text) => {
         return text.replace(/[^0-9,]/g, "");

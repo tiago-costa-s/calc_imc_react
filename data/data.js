@@ -4,7 +4,7 @@ export const data = [
         max: 19,
         info: 'Abaixo do peso',
         description: 'Entre 14 e 19',
-        alert: 'average'
+        alert: 'medium'
     },
 
     {
@@ -17,14 +17,14 @@ export const data = [
 
     {
         min: 24,
-        max: 28.9,
+        max: 29.9,
         info: 'Sobre Peso',
         description: 'Entre 24 e 28.9',
-        alert: 'average'
+        alert: 'medium'
     },
 
     {
-        min: 39,
+        min: 30,
         max: 34.9,
         info: 'Obesidade I',
         description: 'Entre 29 e 34.9',

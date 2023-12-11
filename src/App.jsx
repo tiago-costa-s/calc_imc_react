@@ -44,8 +44,7 @@ function App() {
 
   return (
     <div className="app">
-      <CalculatorImc calcImc={calcImc} />
-      {/* <TableImc /> */}
+      <CalculatorImc calcImc={calcImc} />   
 
       {imc ?
         <TableImc data={data} imc={imc} info={info} description={description} />
