@@ -2,7 +2,6 @@
 import { FaWeightHanging } from 'react-icons/fa';
 import { FaTextHeight } from 'react-icons/fa6';
 // Componentes
-import ControlSelectInput from '../controlSelectInput/ControlSelectInput';
 import FormButton from '../formButton/FormButton';
 // CSS
 import './CalculatorImc.css';

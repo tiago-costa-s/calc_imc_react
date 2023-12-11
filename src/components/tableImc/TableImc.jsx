@@ -24,11 +24,11 @@ const TableImc = ({ data, imc, info }) => {
             </div>
 
             {data.map((table) => (
-                <div className="table-body">
+                <div className="table-body" key={table.description}>
                     <p className="column-description">
                         {table.description}
                     </p>
-                    <p className="column-info">
+                    <p className="column-info" >
                         {table.info}
                     </p>
                 </div>

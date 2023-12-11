@@ -24,18 +24,18 @@ export const data = [
     },
 
     {
-        min: 29,
-        max: 39.9,
+        min: 39,
+        max: 34.9,
         info: 'Obesidade I',
-        description: 'Entre 29 e 39.9',
+        description: 'Entre 29 e 34.9',
         alert: 'medium-heavy'
     },
 
     {
-        min: 29,
+        min: 35,
         max: 39.9,
         info: 'Obesidade II',
-        description: 'Entre 29 e 39.9',
+        description: 'Entre 35 e 39.9',
         alert: 'heavy'
     },
 
