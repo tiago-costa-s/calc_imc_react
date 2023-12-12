@@ -8,9 +8,9 @@ import { useState } from 'react';
 
 function App() {
 
-  const [imc, setImc] = useState("");
-  const [info, setInfo] = useState("");
-  const [description, setDescription] = useState("");
+  const [imc, setImc] = useState('');
+  const [info, setInfo] = useState('');
+  const [description, setDescription] = useState('');
 
   const calcImc = (e, height, weight, gender) => {
     e.preventDefault();
@@ -25,13 +25,6 @@ function App() {
 
     setImc(imcResult);
 
-    console.log("ALTURA: " + height);
-    console.log("PESO: " + weight);
-    console.log("IMC: " + imcResult);
-    console.log("Orientação: " + gender);
-    console.log("INFO: " + info);
-    console.log("DESCRIPTION: " + description);
-
     data.map((list) => {
       if (imcResult >= list.min && imcResult <= list.max) {
         setInfo(list.info);
@@ -43,7 +36,7 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <div className='app'>
       <CalculatorImc calcImc={calcImc} />   
 
       {imc ?
