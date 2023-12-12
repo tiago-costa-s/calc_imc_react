@@ -6,12 +6,20 @@ import './TableImc.css';
 
 const TableImc = ({ data, imc, info }) => {
 
+    let alertColor;
+
+    data.map((tab) => {
+        if (imc >= tab.min && imc <= tab.max) {
+            alertColor = tab.alert;
+        }
+    });
+
     return (
 
         <div className='table-imc'>
             <div className='result-header'>
-                <p>Seu IMC <span className='' id='imc'>{imc}</span></p>
-                <p>Sua Classificação <span id='info'>{info}</span></p>
+                <p>Seu IMC <span className={alertColor} id='imc'>{imc}</span></p>
+                <p>Sua Classificação <span className={alertColor} id='info'>{info}</span></p>
             </div>
             <div className='table-header'>
                 <p>Classificações</p>
