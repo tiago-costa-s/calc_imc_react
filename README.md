@@ -2,6 +2,8 @@
 
 Uma calculadora de IMC simples feita com ReactJS, JavaScript, HTML e CSS.
 
+![Descrição da Imagem](https://i.postimg.cc/mk9jFVy4/calculadora-imc-react.png)
+
 ## Índice
 
 - [Descrição](#descrição)
